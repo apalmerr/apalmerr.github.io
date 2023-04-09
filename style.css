@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-image: url(img/inicio1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hamburger{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-color: rgba(17, 17, 16, 0.856);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    transition: transform .3 ease-in-out;
+    transform: translate(100%);
+}
+
+.menu-navegacion a{
+    font-size: 150%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    color: rgb(235, 129, 43);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil {
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: filter  3s;
+}
+
+  
+.titulo-primario,
+.titulo-secundario {
+    font-size: 45px;
+    font-weight: 500;
+    color: #000000;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.spread {
+    transform: translate(0%);
+}
+
+/* CONTENEDORES */
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #cfa27d;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.tercer-titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.predeterminado{
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+/* NUESTRA CARTA */
+.carta{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.contenedor-carta{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-carta-imagenes{
+    align-items: center;
+   
+}
+
+.img-carta{
+    width: 40%; 
+    margin-left: 8%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.contenedor-btn{
+    display: flex;
+    border-radius: 10px;
+}
+
+.btn{
+    color: var(#070504);
+}
+
+.button--cta{
+    background-color:#ffa700;
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+    align-self: center;
+    margin: 20px auto;
+    font: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button--cta i {
+    margin-right: 10px;
+}
+
+.button--cta:hover{
+    background-color:#414141;
+    color: white;
+}
+
+.button .fa-github:before {
+    color: white;
+  }
+
+/* CONTACTO */
+.cto{
+    background-color: #fcf8f6;
+}
+
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-contacto h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contenedor-contacto p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contac{
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
+
+.social-media-icon-cto{
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffa700 ;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon-cto:hover{
+    background-color: #fff;
+    color:#cfa27d;
+}
+
+.social-media-icon-cto i{
+    text-align: center;
+    line-height: 50px;
+}
+
+/* SOBRE NOSOTROS */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-sobre-nosotros{
+    margin-top: 10px;
+    width: 40%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.tercer-titulo-sobre-nosotros {
+    width: 55%;
+    text-align: center;
+    height: 100%;
+}
+
+.predeterminado-sobre-nosotros{
+    width: 52%;
+    text-align: center;
+    height: 100%;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #be8c6f;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.social-media {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    color: #000;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background-color: #fff;
+    color:#cfa27d;
+}
+
+.social-media-icon i{
+    text-align: center;
+    line-height: 40px;
+}
+
+@media (max-width: 991px) {
+    .menu-navegacion{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .contenedor-sobre-nosotros img{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .predeterminado-sobre-nosotros{
+        width: 90%;
+    }
+
+    .horarios{
+        direction: rtl;
+    }
+    .social-media {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .social-media-icon{
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-media-icon i{
+        text-align: center;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 630px) {
+    .menu-navegacion{
+        width: 60vw;
+    }
+
+    .contenedor-sobre-nosotros img{
+        width: 70%;
+    }
+
+    .img-carta{
+        margin-left: 2%;
+        width: 47%;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links{
+        text-align: center;
+        margin-bottom: 20px;    
+    }
+   .horarios{
+    text-align: center;
+    width: 100%;
+   }
+
+   .footer-content{
+    justify-content: center;
+   }
+}
