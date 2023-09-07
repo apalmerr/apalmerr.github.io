@@ -127,15 +127,18 @@ header {
 }
 
 .contenedor-carta{
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
+.texto1{
+    padding: 15px;
+}
+
 .contenedor-carta-imagenes{
     align-items: center;
-   
 }
 
 .img-carta{
@@ -149,6 +152,8 @@ header {
 .contenedor-btn{
     display: flex;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
